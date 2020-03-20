@@ -17,6 +17,7 @@ license=$5
 
 systemctl stop v2ray.service
 echo '结束进程'
+sleep 3
 rm -f /etc/systemd/system/v2ray.service
 rm -rf $key
 mkdir $key
@@ -46,4 +47,4 @@ systemctl enable v2ray
 systemctl start v2ray
 echo '部署完成'
 sleep 3
-systemctl status v2ray.service
+systemctl status v2ray
