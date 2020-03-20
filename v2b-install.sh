@@ -5,7 +5,7 @@ if cat /etc/os-release | grep "centos" > /dev/null
     yum update
     yum install unzip wget curl -y > /dev/null
 else
-	apt-get update
+    apt-get update
     apt-get install unzip wget curl -y > /dev/null
 fi
 
@@ -21,7 +21,7 @@ rm -f /etc/systemd/system/v2ray.service
 rm -rf $key
 mkdir $key
 cd $key
-wget https://github.com/deepbwork/v2board-server/raw/master/v2board-server
+wget https://github.com/tokumeikoi/aurora/releases/latest/download/aurora
 wget https://github.com/v2ray/v2ray-core/releases/latest/download/v2ray-linux-64.zip
 
 unzip v2ray-linux-64.zip
@@ -35,15 +35,15 @@ Wants=network.target
 [Service]
 Type=simple
 PIDFile=/run/v2ray.pid
-ExecStart=/root/$key/v2board-server -api=$api -token=$key -node=$nodeId -localport=$localPort -license=$license
+ExecStart=/root/$key/aurora -api=$api -token=$key -node=$nodeId -localport=$localPort -license=$license
 Restart=on-failure
 
 [Install]
 WantedBy=multi-user.target
 EOF
 systemctl daemon-reload
-systemctl enable v2ray.service
-systemctl start v2ray.service
+systemctl enable v2ray
+systemctl start v2ray
 echo '部署完成'
 sleep 3
 systemctl status v2ray.service
