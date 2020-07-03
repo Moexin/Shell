@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 echo '正在停止相关进程'
 systemctl stop TCat
 systemctl stop Hash
