@@ -8,4 +8,4 @@ else
     apt-get install xz-utils openssl gawk file -y > /dev/null
 fi
 wget --no-check-certificate -qO InstallNET.sh 'https://moeclub.org/attachment/LinuxShell/InstallNET.sh' && chmod a+x InstallNET.sh
-bash InstallNET.sh -d 9 -v 64 -a
+bash InstallNET.sh -d 10 -v 64 -a
