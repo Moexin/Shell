@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 #Blog:https://moexin.top/4.html
 
 Green="\033[32m"
