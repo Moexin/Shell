@@ -17,7 +17,7 @@ getAbout() {
 	echo " Intro: https://moexin.top/11.html"
 	echo " Copyright (C) 2020 Moexin i@moexin.top"
 	echo -e " Version: ${GREEN}1.0.0${PLAIN} (23 Aug 2020)"
-	echo " Usage: bash <(wget --no-check-certificate -qO- https://cdn.jsdelivr.net/gh/Moexin/Shell@master/Mirror.sh"
+	echo " Usage: bash <(wget --no-check-certificate -qO- https://cdn.jsdelivr.net/gh/Moexin/Shell@master/Mirror.sh)"
 	echo ""
 }
 
