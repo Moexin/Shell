@@ -1,5 +1,5 @@
 #!/bin/bash
-#Blog:https://moexin.top/4.html
+#Blog:https://moexin.top/archives/Linux%20VPS%20one-click%20add/remove%20Swap%20virtual%20memory%20script/
 
 Green="\033[32m"
 Font="\033[0m"
