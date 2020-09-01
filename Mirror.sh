@@ -14,7 +14,7 @@ getAbout() {
 	echo " \                   Created by Moexin                   / "
 	echo " ========================================================= "
 	echo ""
-	echo " Intro: https://moexin.top/11.html"
+	echo " Intro: https://moexin.top/archives/Linux%20software%20source%20one-click%20replacement%20script/"
 	echo " Copyright (C) 2020 Moexin i@moexin.top"
 	echo -e " Version: ${GREEN}1.0.0${PLAIN} (23 Aug 2020)"
 	echo " Usage: bash <(wget --no-check-certificate -qO- https://cdn.jsdelivr.net/gh/Moexin/Shell@master/Mirror.sh)"
